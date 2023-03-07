@@ -38,18 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 // middleware to serve static files
 app.use(express.static('public'));
 
-const isError = (paramVal, errors) => {
-  if (errors) {
-    const error = errors.find(error => error.param == paramVal)
-    if (error) {
-      return "is-invalid"
-    } else {
-      return "is-valid"
-    }
-  } else {
-    return ""
-  }
-}
+
 // define get routes
 app.get('/', (req, res) => {
 
@@ -125,6 +114,20 @@ const getCountries = async () => {
 
   })
 
+}
+// Function to return the validation class based on the error and input name as paramVal
+
+const isError = (paramVal, errors) => {
+  if (errors) {
+    const error = errors.find(error => error.param == paramVal)
+    if (error) {
+      return "is-invalid"
+    } else {
+      return "is-valid"
+    }
+  } else {
+    return ""
+  }
 }
 // Defining the exportsƒ
 module.exports = { app, getCountries, isError }

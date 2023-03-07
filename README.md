@@ -29,13 +29,15 @@ git clone https://github.com/phoenixscript/node-nunjucks-mongo-ss.git
 
 Navigate into the project directory.
 ```bash
-cd node-nunjucks-app
+cd node-nunjucks-mongo-ss
 ```
 Install the necessary dependencies.
 
 ```bash
-
 npm install
+```
+Start the app
+```bash
 node src/app.js
 ```
 Open your web browser and navigate to http://localhost:3001 to see the app in action.
