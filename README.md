@@ -3,7 +3,7 @@
 
 This is a simple Node.js application that uses the Nunjucks template engine to render HTML views. The app is set up with an Express server and responds to GET requests on the root route (/) by rendering an index.html template and passing form data which persisted in a Mongo database. The template uses server side validation to validate the form entries using express validator and displays the error messages to the user.
 
-> Note: The application uses a thrird party api (getCountries)[https://restcountries.com/v3.1/region/europe], sometimes could take a long time to load based on the performance of the API.
+> Note: The application uses a thrird party api (getCountries)[https://restcountries.com/v3.1/region/europe] to load the countries dropdown in the form, sometimes could take a long time to load based on the performance of the API.
 ## Prerequisites
 
 * Node.js (v10 or higher)
