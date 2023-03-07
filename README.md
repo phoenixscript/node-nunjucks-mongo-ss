@@ -24,7 +24,7 @@ Axios - A promise-based HTTP client for Node.js and the browser.
 
 Clone this repository to your local machine or download and extract the ZIP file.
 ```bash
-git clone https://github.com/your-username/node-nunjucks-app.git
+git clone https://github.com/phoenixscript/node-nunjucks-mongo-ss.git
 ```
 
 Navigate into the project directory.
